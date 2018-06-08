@@ -1,17 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lua-leveldb"
-version = "0.3-1"
+version = "0.4-1"
 -- LuaDist source
 source = {
-  tag = "0.3-1",
+  tag = "0.4-1",
   url = "git://github.com/LuaDist-testing/lua-leveldb.git"
 }
 -- Original source
 -- source = {
 -- 	url = "git://github.com/marcopompili/lua-leveldb.git",
--- 	branch = "0.3",
--- 	md5 = ""
+-- 	tag = "0.4"
 -- }
 description = {
 	summary = "LevelDB extension for Lua.",
@@ -19,14 +18,14 @@ description = {
 		LevelDB is a fast key-value storage library written 
 		at Google that provides an ordered mapping from string 
 		keys to string values. This is an extension to use
-		LevelDB directly from Lua. It has been tested on Lua 5.2.
+		LevelDB directly from Lua. It has been tested on Lua 5.1/5.2/5.3.
 	]],
 	homepage = "https://github.com/marcopompili/lua-leveldb",
 	license = "MIT/X11",
-	maintainer = "Marco Pompili <marcs.pompili@gmail.com>"
+	maintainer = "Marco Pompili <pompilimrc@gmail.com>"
 }
 dependencies = {
-	"lua >= 5.2"
+	"lua >= 5.1"
 }
 external_dependencies = {
 	LEVELDB_DB = {
@@ -49,7 +48,7 @@ build = {
 	type = "make",
 	install = {
 		lib = {
-			"leveldb.so"
+			"lualeveldb.so"
 		}
 	},
 	modules = {
